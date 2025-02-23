@@ -29,7 +29,7 @@ use OCP\Share\IManager;
 class ClusteringFaceClassifier extends Classifier {
 	public const IMAGE_TIMEOUT = 120; // seconds
 	public const IMAGE_PUREJS_TIMEOUT = 360; // seconds
-	public const MIN_FACE_RECOGNITION_SCORE = 0.9;
+	public const MIN_FACE_RECOGNITION_SCORE = 0.95;
 
 	public const MAX_FACE_YAW = 50;
 	public const MAX_FACE_ROLL = 30;
