@@ -84,7 +84,7 @@ class HDBSCAN {
 				. " greater than 1, $sampleSize given.");
 		}
 
-		$kernel = $kernel ?? new SquaredDistance();
+		$kernel = $kernel ?? new SparseCosine();
 		$this->sampleSize = $sampleSize;
 		$this->minClusterSize = $minClusterSize;
 		$this->mstSolver = new MstSolver($dataset, 20, $sampleSize, $kernel, $oldCoreDistances, $useTrueMst);
